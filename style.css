@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.weather-container {
+  height: fit-content;
+  margin: 10px 50px;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  box-shadow: 10px 15px 6px rgba(14, 10, 57, 0.255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  border: 2px solid #D9D9D9;
+}
+
+.weather-container h2 {
+  margin: 0 auto;
+  border: 0px dotted yellow;
+  min-height: fit-content;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 5px 15px 5px 15px;
+  font-family: "Libre Bodoni";
+}
+
+
+
+/*.current-weather { 
+    border: 3px solid black;
+    font: 20px "Libre Bodoni";
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+#current-weather {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+#current-weather p {
+    background-color: rgba(255, 191, 0, 0.568);
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+#hourly-forecast ul {
+    background-color: teal;
+    flex-direction: row;
+    max-width: 100px;
+    min-width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+li {
+    border: 1px dotted tomato;
+    font: bold 20px "Merriweather";
+    line-height: 1em;
+    align-self: center;
+
+}
+
+.hourly-forecast {
+    border: 2px solid orange;
+    
+}
+
+#hourly-forecast ul {
+    color: mistyrose;
+    justify-self: flex-start;
+}
+
+#hourly-forecast {
+    color: #ac7070;
+    background-color: mistyrose;
+    font: 18px "Libre Bodoni";
+    line-height: 2em;
+
+}
+
+section {
+    border: 3px solid pink;
+    display: flex;
+    overflow: auto;
+    
+}
+ section li {
+    background-color: #;
+ }
+
+ figure {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+ }
+
+
+ .glow {
+    font-size:30px;
+    color: #ffffff;
+    text-align: center;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+        text-transform:uppercase;
+      text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #ffb44a, 0 0 10px #ffb44a, 0 0 20px #ffb44a, 0 0 30px #ffb44a, 0 0 30px #ffb44a;
+    }
+    
+    to {
+ 
+    text-transform:uppercase;
+      text-shadow: 0 0 5px #fff, 0 0 5px #ffe44d, 0 0 5px #ffe44d, 0 0 10px #ffe44d, 0 0 20px #ffe44d, 0 0 30px #ffe44d, 0 0 30px #ffe44d;
+    }
+  }*/
+
+
+/* •••• CURRENT WEATHER •••• */
+
+.current-weather {
+  background-color: #F8F8F8;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 5px 4px 0 #17223b9e;
+  width: 100%;
+}
+
+
+
+#current-weather {
+  border: 4px solid #ffffffd9;
+  display: flex;
+  justify-content: space-around;
+  width: inherit;
+  border-radius: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#current-weather h2 {
+  font: 15px "Annapurna";
+  padding: 10px 5px 2px 5px;
+
+}
+
+
+#current-weather h1 {
+  align-self: center;
+  text-shadow: 0 0 5px #191919;
+  color: #f8f8f8;
+}
+
+#current-weather p {
+  align-self: center;
+  color: #2C4A3C;
+  font-size: 1.29em;
+  background-color: #F2C2C2;
+  margin: 0px auto;
+  font-family: "poppins";
+  width: 100%;
+  padding: 15px 0;
+  border-top: 2px solid #2C4A3C;
+  border-bottom: 2px solid #2C4A3C;
+}
+
+
+#current-weather div {
+  padding: 15px;
+  background-color: #2C4A3C;
+  border-radius: 1em;
+  color: #F8F8F8;
+  text-shadow: 0 0 4px #000;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+#current-weather figure {
+  color: #415d4c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 2px 0px 2px;
+  background-color: #F8F8F8;
+}
+
+
+
+#current-weather div h3 {
+  margin-bottom: 10px;
+}
+
+#current-weather div h4 {
+  padding-top: 10px;
+  border-top: 2px solid white;
+}
+
+/* •••• BACKGROUND GIF •••• */
+.clear-sky,
+.mainly-clear,
+.partly-cloudy  {
+  background: url(https://i.pinimg.com/originals/48/b0/1a/48b01a4d7f2627a2b51043f8e2965994.gif) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.overcast {
+  background-image: url(https://i.gifer.com/7RtV.gif);
+}
+
+.fog,
+.deposition-rime-fog {
+  background-image: url(https://64.media.tumblr.com/2b021baef09efaa8cb401e2b040f153e/tumblr_p2murb7kvQ1qkprgpo1_1280.gifv);
+}
+
+.light-drizzle,
+.moderate-drizzle,
+.dense-drizzle {
+  background-color: #3568e8a0;
+  background: url(https://i.pinimg.com/originals/9f/72/a4/9f72a4881c7f3791da3dadf12e218efb.gif) center center no-repeat;
+  background-size: cover;
+}
+
+
+
+.thunderstorm {
+  background-image: url();
+}
+
+.slight-snow-fall,
+.moderate-snow-fall,
+.heavy-snow-fall {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07ed52f9-65de-4d91-afc1-6d9594f0de81/dgcrk6y-108ae35e-7ddb-42fb-b48b-c11ace2619e1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA3ZWQ1MmY5LTY1ZGUtNGQ5MS1hZmMxLTZkOTU5NGYwZGU4MVwvZGdjcms2eS0xMDhhZTM1ZS03ZGRiLTQyZmItYjQ4Yi1jMTFhY2UyNjE5ZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TfsMTpLiOpkMz3Lf0ezyR0VZGTOV8De_BoQmZkPjkCs);
+}
+
+
+
+/* •••• HOURLY •••• */
+.hourly-forecast {
+  background-color: #f8f8f871;
+  width: inherit;
+  border: 3px solid #2C4A3C;
+  border-radius: inherit;
+ 
+}
+.hourly-forecast figure {
+  background-color: rgba(255, 255, 255, 0.712);
+  display: flex;
+  flex-direction: row;
+  word-spacing: 4px;
+  position: relative;
+}
+
+#hourly-forecast {
+  background-color: rgba(248, 251, 255, 0.237);
+  overflow: auto;
+}
+
+#hourly-forecast section {
+  display: flex;
+  padding: 10px 10px 10px 0;
+  margin: 5px;
+  overflow-x: auto;
+  position: relative;
+}
+
+#hourly-forecast h3 {
+  text-align: center;
+  background-color: rgb(231, 231, 231);
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: sticky;
+  left: 0; /* Position the h3 element sticky to the left side */
+  margin: ;
+  /* Flexbox properties */
+  display: flex;
+  align-items: center; /* Align vertically */
+}
+
+
+
+.hourly-forecast ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+  background-color: #ffffff21;
+  max-width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+
+.hourly-forecast ul li {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.daily-forecast {
+  background-color: #D9D9D9;
+  border: 2px solid red;
+  margin: 10px auto;
+  width: 100%;
+}
+
+#daily-forecast {
+  background-color: #f8f8f8;
+  border-bottom: 13px solid #D9D9D9;
+  border-left: 13px solid #D9D9D9;
+  border-right: 13px solid #D9D9D9;
+}
+
+#daily-forecast section {
+  border: 2px solid #2C4A3C;
+  padding: 20px 0;
+}
+
+
+#daily-forecast h4 {
+  padding: 5px;
+  text-align: center;
+  font: 1em "Poppins"
+}
+
+#daily-forecast div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 188px;
+  margin: 0 auto;
+  border: 2px solid;
+  border-radius: 3ex;
+  background: rgb(0, 151, 255);
+  background: linear-gradient(90deg, rgba(0, 151, 255, 0.75) 0%, rgba(255, 82, 82, 0.75) 100%);
+}
+
+#daily-forecast div p {
+  padding: 10px;
+}
