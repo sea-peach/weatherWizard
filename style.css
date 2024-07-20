@@ -255,14 +255,13 @@ section {
 
 /* •••• HOURLY •••• */
 .hourly-forecast {
-  background-color: #f8f8f871;
   width: inherit;
   border: 3px solid #2C4A3C;
   border-radius: inherit;
  
 }
 .hourly-forecast figure {
-  background-color: rgba(255, 255, 255, 0.712);
+
   display: flex;
   flex-direction: row;
   word-spacing: 4px;
@@ -270,7 +269,7 @@ section {
 }
 
 #hourly-forecast {
-  background-color: rgba(248, 251, 255, 0.237);
+  background-color:#2C4A3C;
   overflow: auto;
 }
 
@@ -280,6 +279,19 @@ section {
   margin: 5px;
   overflow-x: auto;
   position: relative;
+  border-top: 2PX SOLID #F2C2C2;
+  border-bottom: 2PX SOLID #F2C2C2;
+}
+
+#hourly-forecast section:hover {
+  background-color: #2c4a3ca6;
+}
+
+.hourly-forecast ul:hover {
+  color: #2C4A3C;
+  background-color: #F2C2C2;
+  border-color: #f8f8f8;
+  font-weight: 600;
 }
 
 #hourly-forecast h3 {
@@ -309,6 +321,7 @@ section {
   height: 100px;
   border-radius: 50%;
   border: 3px solid #000;
+  color: #F8F8F8;
 }
 
 .hourly-forecast ul li {
@@ -318,10 +331,34 @@ section {
 }
 
 .daily-forecast {
-  background-color: #D9D9D9;
-  border: 2px solid red;
+}
+.daily-forecast h4 {
+  color: #2C4A3C;
+  margin: 0 auto;
+  border: 2px solid #2C4A3C;
+  width: 70px;;
+  vertical-align: middle;
+}
+
+.daily-forecast p {
+  border: 0px solid green;
+}
+
+.daily-forecast span {
+  display: flex;
+  border: 2px solid #F2C2C2;
   margin: 10px auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.daily-forecast {
+  background-color: #D9D9D9;
+  margin: 10px;
   width: 100%;
+  border-radius: 1em;
+  padding: 20px;
 }
 
 #daily-forecast {
@@ -334,6 +371,7 @@ section {
 #daily-forecast section {
   border: 2px solid #2C4A3C;
   padding: 20px 0;
+
 }
 
 
@@ -344,9 +382,10 @@ section {
 }
 
 #daily-forecast div {
+  align-content: center;
   display: flex;
-  justify-content: space-between;
-  max-width: 188px;
+  justify-content: center;
+  min-width: none;
   margin: 0 auto;
   border: 2px solid;
   border-radius: 3ex;
@@ -355,5 +394,9 @@ section {
 }
 
 #daily-forecast div p {
-  padding: 10px;
+  height:min-content;
+  margin: 0 auto;
+  min-width: 90px;
+  text-align: center;
+  align-self: center;
 }
